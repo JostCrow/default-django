@@ -1,0 +1,36 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+factory-boy = "*"
+django-debug-toolbar = "*"
+pep8 = "*"
+pylint = "*"
+coverage = "*"
+ipython = "*"
+django-webtest = "*"
+isort = "*"
+pytest = "*"
+black = "*"
+
+[packages]
+django = "*"
+django-hijack = "*"
+django-hijack-admin = "*"
+django-choices = "*"
+django-sniplates = "*"
+django-redis = "*"
+django-admin-index = "*"
+djangorestframework = "*"
+"psycopg2-binary" = "*"
+pillow = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+runserver = "python ./src/manage.py runserver"
+test = "pytest"
+django = "python ./src/manage.py"
